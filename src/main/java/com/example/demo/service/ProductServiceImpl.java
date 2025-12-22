@@ -71,7 +71,6 @@ public Page<Product> getProducts(
         String direction,
         String search
 ) {
-
     Sort sort = direction.equalsIgnoreCase("desc")
             ? Sort.by(sortBy).descending()
             : Sort.by(sortBy).ascending();
